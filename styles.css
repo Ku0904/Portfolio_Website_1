@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ff5722;
+  --secondary-color: #2196f3;
+  --text-color: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo img {
+  width: 150px;
+}
+
+nav {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.first-row {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.second-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.full-width-column,
+.third-width-column {
+  flex: 1;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0.5rem;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+@media (max-width: 768px) {
+  .second-row {
+    flex-direction: column;
+  }
+
+  .full-width-column,
+  .third-width-column {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+}
+
+div h2 {
+  font-family: "Arial", sans-serif;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+div h3 {
+  font-family: "Tahoma", sans-serif;
+  color: var(--secondary-color);
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+div h3:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+div p {
+  font-family: "Verdana", sans-serif;
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+div h2:hover {
+  color: var(--secondary-color);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+div p:hover {
+  color: var(--secondary-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.special-offer-banner {
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.special-offer-banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.special-offer-banner img:hover {
+  transform: scale(1.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+.large-promo-banner {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.large-promo-banner h3 {
+  font-family: "Arial", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.large-promo-banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.large-promo-banner img:hover {
+  transform: scale(1.05);
+}
+.left-footer-column img {
+  width: 90px;
+  margin-right: 1400px;
+}
+.right-footer-column {
+  text-align: right;
+  position: absolute;
+  top: 1650px;
+  right: 70px;
+}
